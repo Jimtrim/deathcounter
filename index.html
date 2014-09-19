@@ -8,6 +8,7 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,44 +18,34 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container">
+		
 			<h1 class="text-center">Death count for Mad Gaming</h1>
 
-
-			<section id="player-registration">
-				<form class="form-horizontal">
-				<fieldset>
-					<!-- Text input-->
-					<div id="players-list" class="form-group">
-					</div>
-
-					<div class="col-md-12">
-						<div class="col-md-4">
-							<button type="button" id="add_player_btn" name="add_player_btn" class="btn">Add player</button>
+			<div class="container">
+				<section id="player-registration">
+					<form class="form-horizontal">
+					<fieldset>
+						<!-- Text input-->
+						<div id="players-list" class="form-group">
 						</div>
-					</div>
 
-					<!-- Button -->
-					<div class="col-md-12">
-						<label class="col-md-4 control-label" for="submit_players_btn">Sumbit players</label>
-						<div class="col-md-4">
+						<div class="col-md-12">
+							<button type="button" id="add_player_btn" name="add_player_btn" class="btn">Add player</button>
 							<button type="button" id="submit_players_btn" name="submit_players_btn" class="btn btn-primary">Submit</button>
 						</div>
+
+
+					</fieldset>
+					</form>
+				</section>
+
+				<!-- TODO: No inline styling -->
+				<section id="player-tracking">
+					<h1>Player Tracking</h1>
+					<div id="player-tracking-list">
 					</div>
-
-				</fieldset>
-				</form>
-			</section>
-
-			<!-- TODO: No inline styling -->
-			<section id="player-tracking" style="opacity:0.0;">
-				<h1>Player Tracking</h1>
-				<div id="player-tracking-list">
-				</div>
-			</section>
-
-
-		</div>
+				</section>
+			</div>
 		<!-- jQuery -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

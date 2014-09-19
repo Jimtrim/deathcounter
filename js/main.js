@@ -4,16 +4,13 @@ var DeathCount = DeathCount || {};
 DeathCount.lastNum = 0;
 DeathCount.playerCollection = [];
 DeathCount.createPlayerFormGroup = function(num) {
-	return '<label class="control-label" for="prependedtext">Player ' + num + '</label>'
-		+ '<div class="row">'
-			+ '<div class="input-group player-group">'
+	return '<div class="col-md-6"><label>Player ' + num + '</label>'
+				+ '<div class="col-sm-12 input-group player-group">'
 				+ '<label for="player-' + num + '-name" class="input-group-addon">Name</label>'
 				+ '<input class="player-name form-control" id="player-'+num+'-name" name="player-'+num+'-name" placeholder="Player '+ num + ' name" type="text">'
 				+ '<label for="player-' + num + '-deaths" class="input-group-addon">Initial deaths</label>'
 				+ '<input class="player-deaths form-control" id="player-'+num+'-deaths" name="player-'+num+'-deaths" placeholder="Player '+ num + ' deaths" type="text">'
-			+ '</div>'
-
-		+ '</div>'
+			+ '</div></div>'
 }
 DeathCount.createTrackingView = function() {
 	DeathCount.createPlayerCollection();
@@ -40,7 +37,6 @@ DeathCount.addPlayer =  function(num) {
 		num = DeathCount.lastNum+1; 
 		DeathCount.lastNum = num;
 	}
-	console.log(num);
 
 	var out = DeathCount.createPlayerFormGroup(num);
 	jQuery(out).appendTo('#players-list');

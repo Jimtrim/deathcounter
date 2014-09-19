@@ -4,8 +4,8 @@ var DeathCount = DeathCount || {};
 DeathCount.lastNum = 0;
 DeathCount.playerCollection = [];
 DeathCount.createPlayerFormGroup = function(num) {
-	return '<label class="col-md-4 control-label" for="prependedtext">Player ' + num + '</label>'
-		+ '<div class="col-md-4">'
+	return '<label class="control-label" for="prependedtext">Player ' + num + '</label>'
+		+ '<div class="row">'
 			+ '<div class="input-group player-group">'
 				+ '<label for="player-' + num + '-name" class="input-group-addon">Name</label>'
 				+ '<input class="player-name form-control" id="player-'+num+'-name" name="player-'+num+'-name" placeholder="Player '+ num + ' name" type="text">'
